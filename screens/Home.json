@@ -1,0 +1,286 @@
+{
+  "screenshot": {
+    "name": "projects/15898168527140177881/files/ae72cc72c91c46ccb4cdb4636f8b104c",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0uhsuGCsFkCz39FRP0X6E4URxFtDbeb9A5AsIlRH58yE1DA_L3GmajWoElzF7u2C0GWFEJkBwse5wE9oIhKaGRrSoUuGZRd5ZehlqUsn5WBQfsBVr4NyUDpFm2TCIspsHlqofYHCRFy8kMZEMmhe83feREDTNQU6dbZBdRlKI2fLcX8h2gPu99lCikwHzFCOwJqNDPAuLUj51ZCrHd2SvIPc64vOPe1I66LFefdpJIA_ZE8dNs5nO8CEhcpX"
+  },
+  "htmlCode": {
+    "name": "projects/15898168527140177881/files/43625d8f28934fb088a9c072d10b8c07",
+    "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2IwZmI4YWJhMjhhZTQ3YTlhNjY5MDE2NjBiMGYxZGVhEgsSBxDh5dT0pBoYAZIBJAoKcHJvamVjdF9pZBIWQhQxNTg5ODE2ODUyNzE0MDE3Nzg4MQ&filename=&opi=89354086",
+    "mimeType": "text/html"
+  },
+  "id": "adaa420b44a042aea7a2678ded8bf7c6",
+  "generatedBy": "figaro_agent",
+  "width": "2560",
+  "height": "6616",
+  "title": "Home - Bruno Erdison (Replica)",
+  "prompt": "Home page for Bruno Erdison, UI/UX Interaction Designer. \nHero section: Centered large serif heading \"Bruno Erdison UI/UX Interaction Designer Based in Poland\". \nBiography section: Left-aligned \"BIOGRAPHY\" label, followed by text \"Work for money and design for love! I'm Bruno, an UI/UX Interaction Designer based in Poland.\" \nContact section: Left-aligned \"CONTACT\" label, followed by location \"Warsaw, Poland\", email \"hello@brunoerdison.com\", and phone number \"+68 3568 89 86\".\nCentral Visual: A portrait of Bruno (man with beard and glasses holding a small dog) in a tall arched/oval frame.\nStats section (right side): \"8 YEARS OF EXPERIENCE\", \"100% SATISFACTION CLIENTS\", \"+80 CLIENTS ON WORLDWIDE\".\nLogos section: A row of grayscale client logos (BLB, CW, Serenity Hotel, Artchive, Creative Space).\n\"My Advantage\" section: Six circular icons with percentages and labels: Figma (90%), Sketch (95%), Adobe XD (82%), InvisionApp (93%), Bootstrap (76%), HTML5/CSS (88%).\nLayout must be white, clean, and use the typography from the design system.",
+  "name": "projects/15898168527140177881/screens/adaa420b44a042aea7a2678ded8bf7c6",
+  "theme": {
+    "colorMode": "LIGHT",
+    "font": "BODONI_MODA",
+    "customColor": "#000000",
+    "headlineFont": "BODONI_MODA",
+    "bodyFont": "INTER",
+    "labelFont": "INTER",
+    "namedColors": {
+      "secondary": "#5e5e5e",
+      "primary_container": "#1b1b1b",
+      "surface_container_low": "#f3f3f3",
+      "surface_dim": "#dadada",
+      "background": "#f9f9f9",
+      "tertiary_fixed_dim": "#c6c6c6",
+      "inverse_on_surface": "#f1f1f1",
+      "primary": "#000000",
+      "on_primary_container": "#848484",
+      "inverse_primary": "#c6c6c6",
+      "tertiary_container": "#1b1b1b",
+      "surface_container_highest": "#e2e2e2",
+      "on_tertiary_fixed": "#1b1b1b",
+      "tertiary_fixed": "#e2e2e2",
+      "surface_container": "#eeeeee",
+      "primary_fixed": "#e2e2e2",
+      "on_error": "#ffffff",
+      "on_primary_fixed_variant": "#474747",
+      "on_surface_variant": "#4c4546",
+      "on_secondary_container": "#646464",
+      "primary_fixed_dim": "#c6c6c6",
+      "error": "#ba1a1a",
+      "on_primary": "#ffffff",
+      "surface": "#f9f9f9",
+      "on_secondary_fixed": "#1b1c1c",
+      "secondary_container": "#e3e2e2",
+      "secondary_fixed": "#e3e2e2",
+      "surface_variant": "#e2e2e2",
+      "outline": "#7e7576",
+      "secondary_fixed_dim": "#c7c6c6",
+      "on_error_container": "#93000a",
+      "on_tertiary_container": "#848484",
+      "surface_tint": "#5e5e5e",
+      "tertiary": "#000000",
+      "surface_bright": "#f9f9f9",
+      "on_tertiary_fixed_variant": "#474747",
+      "on_secondary": "#ffffff",
+      "on_background": "#1b1b1b",
+      "outline_variant": "#cfc4c5",
+      "surface_container_lowest": "#ffffff",
+      "on_primary_fixed": "#1b1b1b",
+      "on_tertiary": "#ffffff",
+      "inverse_surface": "#303030",
+      "on_surface": "#1b1b1b",
+      "surface_container_high": "#e8e8e8",
+      "error_container": "#ffdad6",
+      "on_secondary_fixed_variant": "#464747"
+    },
+    "designMd": "---\nname: Minimal Editorial\ncolors:\n  surface: '#f9f9f9'\n  surface-dim: '#dadada'\n  surface-bright: '#f9f9f9'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f3f3f3'\n  surface-container: '#eeeeee'\n  surface-container-high: '#e8e8e8'\n  surface-container-highest: '#e2e2e2'\n  on-surface: '#1b1b1b'\n  on-surface-variant: '#4c4546'\n  inverse-surface: '#303030'\n  inverse-on-surface: '#f1f1f1'\n  outline: '#7e7576'\n  outline-variant: '#cfc4c5'\n  surface-tint: '#5e5e5e'\n  primary: '#000000'\n  on-primary: '#ffffff'\n  primary-container: '#1b1b1b'\n  on-primary-container: '#848484'\n  inverse-primary: '#c6c6c6'\n  secondary: '#5e5e5e'\n  on-secondary: '#ffffff'\n  secondary-container: '#e3e2e2'\n  on-secondary-container: '#646464'\n  tertiary: '#000000'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#1b1b1b'\n  on-tertiary-container: '#848484'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#e2e2e2'\n  primary-fixed-dim: '#c6c6c6'\n  on-primary-fixed: '#1b1b1b'\n  on-primary-fixed-variant: '#474747'\n  secondary-fixed: '#e3e2e2'\n  secondary-fixed-dim: '#c7c6c6'\n  on-secondary-fixed: '#1b1c1c'\n  on-secondary-fixed-variant: '#464747'\n  tertiary-fixed: '#e2e2e2'\n  tertiary-fixed-dim: '#c6c6c6'\n  on-tertiary-fixed: '#1b1b1b'\n  on-tertiary-fixed-variant: '#474747'\n  background: '#f9f9f9'\n  on-background: '#1b1b1b'\n  surface-variant: '#e2e2e2'\ntypography:\n  display-lg:\n    fontFamily: Bodoni Moda\n    fontSize: 72px\n    fontWeight: '400'\n    lineHeight: '1.1'\n    letterSpacing: -0.02em\n  display-lg-mobile:\n    fontFamily: Bodoni Moda\n    fontSize: 48px\n    fontWeight: '400'\n    lineHeight: '1.1'\n    letterSpacing: -0.02em\n  headline-xl:\n    fontFamily: Bodoni Moda\n    fontSize: 48px\n    fontWeight: '400'\n    lineHeight: '1.2'\n  headline-md:\n    fontFamily: Bodoni Moda\n    fontSize: 32px\n    fontWeight: '400'\n    lineHeight: '1.3'\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  body-md:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  label-caps:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: '1.2'\n    letterSpacing: 0.1em\n  meta-info:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '400'\n    lineHeight: '1.4'\nspacing:\n  margin-desktop: 80px\n  margin-tablet: 40px\n  margin-mobile: 20px\n  gutter: 24px\n  section-gap: 160px\n  stack-sm: 12px\n  stack-md: 24px\n---\n\n## Brand & Style\n\nThis design system is rooted in the \"Minimalism\" and \"Editorial\" movements. It evokes a sense of quiet luxury, intellectual rigor, and professional maturity. By prioritizing generous white space and high-contrast typography, the system allows the creative work\u2014photography, UI case studies, or art direction\u2014to remain the focal point without competition from the UI.\n\nThe emotional response should be one of calm clarity. It targets high-end creative industries, fashion, architecture, and luxury brands that value precision and the \"less but better\" philosophy. The visual language uses structural lines to create a sense of order, while the serif typography adds a human, historical touch to an otherwise modern digital environment.\n\n## Colors\n\nThe palette is strictly monochromatic to ensure the system functions as a neutral container for diverse portfolio content.\n\n*   **Primary:** Pure black (#000000) is reserved for interactive states, headings, and high-importance information.\n*   **Neutral/Secondary:** A range of greys provides hierarchy for metadata, captions, and secondary labels.\n*   **Background:** Solid white (#FFFFFF) is the foundational layer, used to create the \"airy\" feel characteristic of the system.\n*   **Borders:** Subtle, light greys (#E0E0E0) are used for horizontal dividers that mimic the structure of a broadsheet newspaper.\n\n## Typography\n\nThe typographic strategy relies on a high-contrast pairing between an elegant Serif and a utilitarian Sans-Serif.\n\n*   **Headlines:** Utilize *Bodoni Moda* for its dramatic vertical contrast. Headlines should feel like mastheads in a high-fashion magazine. Large displays are often centered in hero sections.\n*   **Body:** *Inter* provides maximum legibility for long-form reading and project descriptions.\n*   **Navigation & Labels:** Use all-caps *Inter* with generous letter spacing (tracking) to differentiate navigation and section headers from body content.\n*   **Numbers:** Use *Bodoni Moda* for statistics and years to give them a monumental, graphic quality.\n\n## Layout & Spacing\n\nThe layout uses a **12-column fixed grid** with a maximum width of 1440px to maintain consistent line lengths.\n\n*   **Hero Sections:** Large, centered typography with significant vertical padding (top and bottom).\n*   **Project Showcase:** Elements are arranged in a structured grid (typically 2 or 3 columns). Images should vary in aspect ratio (vertical vs. horizontal) to maintain an editorial, asymmetrical rhythm.\n*   **Dividers:** Full-width horizontal lines (1px) are used to separate major sections, reinforcing the grid without adding visual weight.\n*   **Responsiveness:** On mobile, the 12-column grid collapses to 4 columns. Section gaps should be reduced by 50% to maintain flow on shorter screens.\n\n## Elevation & Depth\n\nThis design system is strictly **flat**. Depth is achieved through hierarchy, scale, and color contrast rather than shadows or blurs.\n\n*   **Z-Index Strategy:** Only used for functional overlays like navigation menus or modals.\n*   **Low-Contrast Outlines:** Instead of shadows, use 1px borders in #E0E0E0 or #F0F0F0 to define containers like input fields or project cards.\n*   **Tonal Backgrounds:** Subtle shifts to light grey (#F9F9F9) can be used to distinguish different sections (e.g., a \"Services\" block vs. a \"Work\" block) while maintaining a high-key light environment.\n\n## Shapes\n\nThe shape language is defined by **sharp corners (0px)**. This reinforces the architectural and print-inspired nature of the design system.\n\n*   **Media:** All images and video thumbnails must have sharp corners.\n*   **UI Elements:** Buttons, input fields, and decorative containers are strictly rectangular. \n*   **Exceptions:** Softness is only introduced through organic circular shapes for decorative elements (e.g., a circular \"Scroll to top\" button or a round portrait image), providing a focal point contrast against the rigid grid.\n\n## Components\n\n### Buttons\nPrimary buttons are black with white text, utilizing a \"label-caps\" style. They are rectangular (0px radius) and typically use a subtle hover state, such as an invert (white background, black border/text) or a slight opacity shift.\n\n### Project Cards\nCards consist of a full-bleed image with metadata placed below. Titles use \"headline-md\" and categories use \"meta-info.\" Avoid borders on the images themselves; let the white space define the separation.\n\n### Input Fields\nBottom-border only styling is preferred for a minimalist look, or a full 1px light grey border. Text labels should be small and uppercase, placed above the field.\n\n### Progress Indicators / Pagers\nUse small, solid black dots or fine lines to indicate slider progress. Keep these elements small to avoid cluttering the visual field.\n\n### Navigation\nThe header should be transparent or solid white, anchored with a 1px bottom border. Links are uppercase with a horizontal line hover effect or a small red dot (as seen in the reference) to indicate the active state.",
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#000000",
+    "overrideSecondaryColor": "#757575",
+    "spacingScale": 2,
+    "typography": {
+      "headline-md": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "32px",
+        "fontWeight": "400",
+        "lineHeight": "1.3"
+      },
+      "body-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "1.6"
+      },
+      "body-md": {
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "1.6"
+      },
+      "headline-xl": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "48px",
+        "fontWeight": "400",
+        "lineHeight": "1.2"
+      },
+      "meta-info": {
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "1.4"
+      },
+      "display-lg-mobile": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "48px",
+        "fontWeight": "400",
+        "lineHeight": "1.1",
+        "letterSpacing": "-0.02em"
+      },
+      "display-lg": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "72px",
+        "fontWeight": "400",
+        "lineHeight": "1.1",
+        "letterSpacing": "-0.02em"
+      },
+      "label-caps": {
+        "fontFamily": "Inter",
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "lineHeight": "1.2",
+        "letterSpacing": "0.1em"
+      }
+    },
+    "spacing": {
+      "margin-desktop": "80px",
+      "margin-tablet": "40px",
+      "margin-mobile": "20px",
+      "section-gap": "160px",
+      "gutter": "24px",
+      "stack-md": "24px",
+      "stack-sm": "12px"
+    },
+    "headlineFontFamily": "Bodoni Moda",
+    "bodyFontFamily": "Inter",
+    "labelFontFamily": "Inter"
+  },
+  "deviceType": "DESKTOP",
+  "screenType": "DESIGN",
+  "screenMetadata": {
+    "agentType": "PRO_AGENT",
+    "status": "COMPLETE"
+  },
+  "designSystem": {
+    "name": "assets/6692a94c6dd24433a6e8b77833fec82e",
+    "designSystem": {
+      "displayName": "Minimal Editorial",
+      "styleGuidelines": "## Brand & Style\n\nThis design system is rooted in the \"Minimalism\" and \"Editorial\" movements. It evokes a sense of quiet luxury, intellectual rigor, and professional maturity. By prioritizing generous white space and high-contrast typography, the system allows the creative work\u2014photography, UI case studies, or art direction\u2014to remain the focal point without competition from the UI.\n\nThe emotional response should be one of calm clarity. It targets high-end creative industries, fashion, architecture, and luxury brands that value precision and the \"less but better\" philosophy. The visual language uses structural lines to create a sense of order, while the serif typography adds a human, historical touch to an otherwise modern digital environment.\n\n## Layout & Spacing\n\nThe layout uses a **12-column fixed grid** with a maximum width of 1440px to maintain consistent line lengths.\n\n*   **Hero Sections:** Large, centered typography with significant vertical padding (top and bottom).\n*   **Project Showcase:** Elements are arranged in a structured grid (typically 2 or 3 columns). Images should vary in aspect ratio (vertical vs. horizontal) to maintain an editorial, asymmetrical rhythm.\n*   **Dividers:** Full-width horizontal lines (1px) are used to separate major sections, reinforcing the grid without adding visual weight.\n*   **Responsiveness:** On mobile, the 12-column grid collapses to 4 columns. Section gaps should be reduced by 50% to maintain flow on shorter screens.\n\n## Elevation & Depth\n\nThis design system is strictly **flat**. Depth is achieved through hierarchy, scale, and color contrast rather than shadows or blurs.\n\n*   **Z-Index Strategy:** Only used for functional overlays like navigation menus or modals.\n*   **Low-Contrast Outlines:** Instead of shadows, use 1px borders in #E0E0E0 or #F0F0F0 to define containers like input fields or project cards.\n*   **Tonal Backgrounds:** Subtle shifts to light grey (#F9F9F9) can be used to distinguish different sections (e.g., a \"Services\" block vs. a \"Work\" block) while maintaining a high-key light environment.\n\n## Components\n\n### Buttons\nPrimary buttons are black with white text, utilizing a \"label-caps\" style. They are rectangular (0px radius) and typically use a subtle hover state, such as an invert (white background, black border/text) or a slight opacity shift.\n\n### Project Cards\nCards consist of a full-bleed image with metadata placed below. Titles use \"headline-md\" and categories use \"meta-info.\" Avoid borders on the images themselves; let the white space define the separation.\n\n### Input Fields\nBottom-border only styling is preferred for a minimalist look, or a full 1px light grey border. Text labels should be small and uppercase, placed above the field.\n\n### Progress Indicators / Pagers\nUse small, solid black dots or fine lines to indicate slider progress. Keep these elements small to avoid cluttering the visual field.\n\n### Navigation\nThe header should be transparent or solid white, anchored with a 1px bottom border. Links are uppercase with a horizontal line hover effect or a small red dot (as seen in the reference) to indicate the active state.",
+      "theme": {
+        "colorMode": "LIGHT",
+        "font": "BODONI_MODA",
+        "customColor": "#000000",
+        "headlineFont": "BODONI_MODA",
+        "bodyFont": "INTER",
+        "labelFont": "INTER",
+        "namedColors": {
+          "inverse_primary": "#c6c6c6",
+          "on_primary_container": "#848484",
+          "primary": "#000000",
+          "inverse_on_surface": "#f1f1f1",
+          "tertiary_fixed_dim": "#c6c6c6",
+          "background": "#f9f9f9",
+          "surface_dim": "#dadada",
+          "surface_container_low": "#f3f3f3",
+          "primary_container": "#1b1b1b",
+          "secondary": "#5e5e5e",
+          "on_secondary_container": "#646464",
+          "on_surface_variant": "#4c4546",
+          "on_primary_fixed_variant": "#474747",
+          "on_error": "#ffffff",
+          "primary_fixed": "#e2e2e2",
+          "surface_container": "#eeeeee",
+          "on_tertiary_fixed": "#1b1b1b",
+          "tertiary_fixed": "#e2e2e2",
+          "surface_container_highest": "#e2e2e2",
+          "tertiary_container": "#1b1b1b",
+          "tertiary": "#000000",
+          "on_tertiary_container": "#848484",
+          "surface_tint": "#5e5e5e",
+          "on_error_container": "#93000a",
+          "secondary_fixed_dim": "#c7c6c6",
+          "outline": "#7e7576",
+          "surface_variant": "#e2e2e2",
+          "secondary_fixed": "#e3e2e2",
+          "on_secondary_fixed": "#1b1c1c",
+          "secondary_container": "#e3e2e2",
+          "on_primary": "#ffffff",
+          "surface": "#f9f9f9",
+          "error": "#ba1a1a",
+          "primary_fixed_dim": "#c6c6c6",
+          "on_secondary_fixed_variant": "#464747",
+          "error_container": "#ffdad6",
+          "surface_container_high": "#e8e8e8",
+          "on_surface": "#1b1b1b",
+          "inverse_surface": "#303030",
+          "on_tertiary": "#ffffff",
+          "on_primary_fixed": "#1b1b1b",
+          "surface_container_lowest": "#ffffff",
+          "outline_variant": "#cfc4c5",
+          "on_background": "#1b1b1b",
+          "on_secondary": "#ffffff",
+          "on_tertiary_fixed_variant": "#474747",
+          "surface_bright": "#f9f9f9"
+        },
+        "designMd": "---\nname: Minimal Editorial\ncolors:\n  surface: '#f9f9f9'\n  surface-dim: '#dadada'\n  surface-bright: '#f9f9f9'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f3f3f3'\n  surface-container: '#eeeeee'\n  surface-container-high: '#e8e8e8'\n  surface-container-highest: '#e2e2e2'\n  on-surface: '#1b1b1b'\n  on-surface-variant: '#4c4546'\n  inverse-surface: '#303030'\n  inverse-on-surface: '#f1f1f1'\n  outline: '#7e7576'\n  outline-variant: '#cfc4c5'\n  surface-tint: '#5e5e5e'\n  primary: '#000000'\n  on-primary: '#ffffff'\n  primary-container: '#1b1b1b'\n  on-primary-container: '#848484'\n  inverse-primary: '#c6c6c6'\n  secondary: '#5e5e5e'\n  on-secondary: '#ffffff'\n  secondary-container: '#e3e2e2'\n  on-secondary-container: '#646464'\n  tertiary: '#000000'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#1b1b1b'\n  on-tertiary-container: '#848484'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#e2e2e2'\n  primary-fixed-dim: '#c6c6c6'\n  on-primary-fixed: '#1b1b1b'\n  on-primary-fixed-variant: '#474747'\n  secondary-fixed: '#e3e2e2'\n  secondary-fixed-dim: '#c7c6c6'\n  on-secondary-fixed: '#1b1c1c'\n  on-secondary-fixed-variant: '#464747'\n  tertiary-fixed: '#e2e2e2'\n  tertiary-fixed-dim: '#c6c6c6'\n  on-tertiary-fixed: '#1b1b1b'\n  on-tertiary-fixed-variant: '#474747'\n  background: '#f9f9f9'\n  on-background: '#1b1b1b'\n  surface-variant: '#e2e2e2'\ntypography:\n  display-lg:\n    fontFamily: Bodoni Moda\n    fontSize: 72px\n    fontWeight: '400'\n    lineHeight: '1.1'\n    letterSpacing: -0.02em\n  display-lg-mobile:\n    fontFamily: Bodoni Moda\n    fontSize: 48px\n    fontWeight: '400'\n    lineHeight: '1.1'\n    letterSpacing: -0.02em\n  headline-xl:\n    fontFamily: Bodoni Moda\n    fontSize: 48px\n    fontWeight: '400'\n    lineHeight: '1.2'\n  headline-md:\n    fontFamily: Bodoni Moda\n    fontSize: 32px\n    fontWeight: '400'\n    lineHeight: '1.3'\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  body-md:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  label-caps:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: '1.2'\n    letterSpacing: 0.1em\n  meta-info:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '400'\n    lineHeight: '1.4'\nspacing:\n  margin-desktop: 80px\n  margin-tablet: 40px\n  margin-mobile: 20px\n  gutter: 24px\n  section-gap: 160px\n  stack-sm: 12px\n  stack-md: 24px\n---\n\n## Brand & Style\n\nThis design system is rooted in the \"Minimalism\" and \"Editorial\" movements. It evokes a sense of quiet luxury, intellectual rigor, and professional maturity. By prioritizing generous white space and high-contrast typography, the system allows the creative work\u2014photography, UI case studies, or art direction\u2014to remain the focal point without competition from the UI.\n\nThe emotional response should be one of calm clarity. It targets high-end creative industries, fashion, architecture, and luxury brands that value precision and the \"less but better\" philosophy. The visual language uses structural lines to create a sense of order, while the serif typography adds a human, historical touch to an otherwise modern digital environment.\n\n## Colors\n\nThe palette is strictly monochromatic to ensure the system functions as a neutral container for diverse portfolio content.\n\n*   **Primary:** Pure black (#000000) is reserved for interactive states, headings, and high-importance information.\n*   **Neutral/Secondary:** A range of greys provides hierarchy for metadata, captions, and secondary labels.\n*   **Background:** Solid white (#FFFFFF) is the foundational layer, used to create the \"airy\" feel characteristic of the system.\n*   **Borders:** Subtle, light greys (#E0E0E0) are used for horizontal dividers that mimic the structure of a broadsheet newspaper.\n\n## Typography\n\nThe typographic strategy relies on a high-contrast pairing between an elegant Serif and a utilitarian Sans-Serif.\n\n*   **Headlines:** Utilize *Bodoni Moda* for its dramatic vertical contrast. Headlines should feel like mastheads in a high-fashion magazine. Large displays are often centered in hero sections.\n*   **Body:** *Inter* provides maximum legibility for long-form reading and project descriptions.\n*   **Navigation & Labels:** Use all-caps *Inter* with generous letter spacing (tracking) to differentiate navigation and section headers from body content.\n*   **Numbers:** Use *Bodoni Moda* for statistics and years to give them a monumental, graphic quality.\n\n## Layout & Spacing\n\nThe layout uses a **12-column fixed grid** with a maximum width of 1440px to maintain consistent line lengths.\n\n*   **Hero Sections:** Large, centered typography with significant vertical padding (top and bottom).\n*   **Project Showcase:** Elements are arranged in a structured grid (typically 2 or 3 columns). Images should vary in aspect ratio (vertical vs. horizontal) to maintain an editorial, asymmetrical rhythm.\n*   **Dividers:** Full-width horizontal lines (1px) are used to separate major sections, reinforcing the grid without adding visual weight.\n*   **Responsiveness:** On mobile, the 12-column grid collapses to 4 columns. Section gaps should be reduced by 50% to maintain flow on shorter screens.\n\n## Elevation & Depth\n\nThis design system is strictly **flat**. Depth is achieved through hierarchy, scale, and color contrast rather than shadows or blurs.\n\n*   **Z-Index Strategy:** Only used for functional overlays like navigation menus or modals.\n*   **Low-Contrast Outlines:** Instead of shadows, use 1px borders in #E0E0E0 or #F0F0F0 to define containers like input fields or project cards.\n*   **Tonal Backgrounds:** Subtle shifts to light grey (#F9F9F9) can be used to distinguish different sections (e.g., a \"Services\" block vs. a \"Work\" block) while maintaining a high-key light environment.\n\n## Shapes\n\nThe shape language is defined by **sharp corners (0px)**. This reinforces the architectural and print-inspired nature of the design system.\n\n*   **Media:** All images and video thumbnails must have sharp corners.\n*   **UI Elements:** Buttons, input fields, and decorative containers are strictly rectangular. \n*   **Exceptions:** Softness is only introduced through organic circular shapes for decorative elements (e.g., a circular \"Scroll to top\" button or a round portrait image), providing a focal point contrast against the rigid grid.\n\n## Components\n\n### Buttons\nPrimary buttons are black with white text, utilizing a \"label-caps\" style. They are rectangular (0px radius) and typically use a subtle hover state, such as an invert (white background, black border/text) or a slight opacity shift.\n\n### Project Cards\nCards consist of a full-bleed image with metadata placed below. Titles use \"headline-md\" and categories use \"meta-info.\" Avoid borders on the images themselves; let the white space define the separation.\n\n### Input Fields\nBottom-border only styling is preferred for a minimalist look, or a full 1px light grey border. Text labels should be small and uppercase, placed above the field.\n\n### Progress Indicators / Pagers\nUse small, solid black dots or fine lines to indicate slider progress. Keep these elements small to avoid cluttering the visual field.\n\n### Navigation\nThe header should be transparent or solid white, anchored with a 1px bottom border. Links are uppercase with a horizontal line hover effect or a small red dot (as seen in the reference) to indicate the active state.",
+        "colorVariant": "FIDELITY",
+        "overridePrimaryColor": "#000000",
+        "overrideSecondaryColor": "#757575",
+        "spacingScale": 2,
+        "typography": {
+          "display-lg-mobile": {
+            "fontFamily": "Bodoni Moda",
+            "fontSize": "48px",
+            "fontWeight": "400",
+            "lineHeight": "1.1",
+            "letterSpacing": "-0.02em"
+          },
+          "display-lg": {
+            "fontFamily": "Bodoni Moda",
+            "fontSize": "72px",
+            "fontWeight": "400",
+            "lineHeight": "1.1",
+            "letterSpacing": "-0.02em"
+          },
+          "label-caps": {
+            "fontFamily": "Inter",
+            "fontSize": "12px",
+            "fontWeight": "600",
+            "lineHeight": "1.2",
+            "letterSpacing": "0.1em"
+          },
+          "headline-md": {
+            "fontFamily": "Bodoni Moda",
+            "fontSize": "32px",
+            "fontWeight": "400",
+            "lineHeight": "1.3"
+          },
+          "body-lg": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "1.6"
+          },
+          "headline-xl": {
+            "fontFamily": "Bodoni Moda",
+            "fontSize": "48px",
+            "fontWeight": "400",
+            "lineHeight": "1.2"
+          },
+          "body-md": {
+            "fontFamily": "Inter",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "1.6"
+          },
+          "meta-info": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "1.4"
+          }
+        },
+        "spacing": {
+          "stack-md": "24px",
+          "stack-sm": "12px",
+          "gutter": "24px",
+          "section-gap": "160px",
+          "margin-desktop": "80px",
+          "margin-tablet": "40px",
+          "margin-mobile": "20px"
+        },
+        "headlineFontFamily": "Bodoni Moda",
+        "bodyFontFamily": "Inter",
+        "labelFontFamily": "Inter"
+      }
+    },
+    "version": "1"
+  }
+}

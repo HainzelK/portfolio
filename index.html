@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Hainzel Kemal</title>
+    <!-- Tailwind CSS with Plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <!-- Material Symbols Outlined -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Custom Tailwind Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#4c4546",
+                        "on-secondary-fixed-variant": "#464747",
+                        "surface": "#f9f9f9",
+                        "primary-fixed": "#e2e2e2",
+                        "on-primary-fixed": "#1b1b1b",
+                        "tertiary-container": "#1b1b1b",
+                        "on-surface": "#1b1b1b",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-bright": "#f9f9f9",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#1b1b1b",
+                        "surface-container-high": "#e8e8e8",
+                        "on-primary-fixed-variant": "#474747",
+                        "secondary-container": "#e3e2e2",
+                        "background": "#f9f9f9",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "primary-container": "#1b1b1b",
+                        "secondary-fixed": "#e3e2e2",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#646464",
+                        "inverse-surface": "#303030",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f3f3f3",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "tertiary": "#000000",
+                        "on-tertiary-container": "#848484",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-background": "#1b1b1b",
+                        "secondary": "#5e5e5e",
+                        "outline-variant": "#cfc4c5",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "surface-container": "#eeeeee",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-dim": "#dadada",
+                        "surface-tint": "#5e5e5e",
+                        "inverse-primary": "#c6c6c6",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "on-primary-container": "#848484",
+                        "primary": "#000000",
+                        "outline": "#7e7576",
+                        "surface-variant": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-tablet": "40px",
+                        "stack-md": "24px",
+                        "margin-desktop": "80px",
+                        "section-gap": "160px",
+                        "stack-sm": "12px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Montserrat", "sans-serif"],
+                        "meta-info": ["Montserrat", "sans-serif"],
+                        "body-lg": ["Montserrat", "sans-serif"],
+                        "display-lg": ["Montserrat", "sans-serif"],
+                        "headline-xl": ["Montserrat", "sans-serif"],
+                        "display-lg-mobile": ["Montserrat", "sans-serif"],
+                        "headline-md": ["Montserrat", "sans-serif"],
+                        "body-md": ["Montserrat", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "meta-info": ["14px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body { background-color: #f9f9f9; }
+        /* Custom scrollbar for minimalist feel */
+        ::-webkit-scrollbar { width: 4px; height: 4px; }
+        ::-webkit-scrollbar-track { background: #f9f9f9; }
+        ::-webkit-scrollbar-thumb { background: #1b1b1b; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Interactive styles */
+        .portfolio-image { filter: grayscale(100%); transition: filter 0.5s ease; }
+        .portfolio-image:hover { filter: grayscale(0%); }
+        
+        .active-dot { width: 4px; height: 4px; background-color: #000; border-radius: 9999px; }
+        .inactive-dot { width: 4px; height: 4px; background-color: #cfc4c5; border-radius: 9999px; }
+        
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .animate-spin-slow { animation: spin 20s linear infinite; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-error selection:text-white overflow-x-hidden">
+
+<!-- Top Navigation Bar -->
+<header class="bg-background/90 backdrop-blur-md border-b border-outline-variant sticky top-0 z-50 transition-all duration-300">
+    <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-[1440px] mx-auto">
+        <div class="text-headline-md font-headline-md tracking-tighter text-center text-primary uppercase flex flex-col leading-none">
+            <a href="#home">Hainzel Kemal</a>
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-label-caps font-label-caps text-primary hover:text-error transition-colors duration-300" href="#home">Home</a>
+            <a class="text-label-caps font-label-caps text-primary hover:text-error transition-colors duration-300" href="#portfolio">Portfolio</a>
+            <a class="text-label-caps font-label-caps text-primary hover:text-error transition-colors duration-300" href="#experience">Experience</a>
+            <!-- <a class="text-label-caps font-label-caps text-primary hover:text-error transition-colors duration-300" href="#social">Social</a> -->
+        </div>
+        <div class="flex items-center gap-4">
+            <!-- <span class="material-symbols-outlined text-primary hover:text-error cursor-pointer transition-colors duration-300" data-icon="public">public</span> -->
+            <span class="material-symbols-outlined text-primary hover:text-error cursor-pointer transition-colors duration-300" data-icon="share">share</span>
+            <!-- <span class="material-symbols-outlined text-primary hover:text-error cursor-pointer transition-colors duration-300 md:block hidden" data-icon="photo_camera">photo_camera</span> -->
+            <!-- <span class="material-symbols-outlined text-primary hover:text-error cursor-pointer transition-colors duration-300 md:block hidden" data-icon="grid_view">grid_view</span> -->
+            <button class="md:hidden text-primary hover:text-error transition-colors">
+                <span class="material-symbols-outlined" data-icon="menu">menu</span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main class="max-w-[1440px] mx-auto">
+
+    <!-- HOME SECTION -->
+    <section id="home" class="px-margin-mobile md:px-margin-desktop pt-12 pb-20">
+        <div class="text-center pt-8 pb-16">
+            <h1 class="text-display-lg-mobile md:text-display-lg font-display-lg text-primary max-w-4xl mx-auto mb-12">
+                Hainzel Kemal<br/>
+                AI and Data Enthusiast<br/>
+                Based in Indonesia
+            </h1>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center relative mb-16">
+            <div class="md:col-span-3 space-y-12 order-2 md:order-1">
+                <div>
+                    <h3 class="text-label-caps font-label-caps text-secondary mb-4 uppercase tracking-widest opacity-60">Biography</h3>
+                    <p class="text-body-lg font-body-lg text-primary leading-relaxed">
+                        Hello! I am a student @ UC Makassar specialized in Artificial Intelligence
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-label-caps font-label-caps text-secondary mb-4 uppercase tracking-widest opacity-60">Contact</h3>
+                    <div class="space-y-1 text-body-md font-body-md text-primary">
+                        <p>Makassar, Indonesia</p>
+                        <p class="hover:text-error transition-colors cursor-pointer">hainzelk@gmail.com</p>
+                        <p>+62 821 1747 7752</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-6 flex justify-center order-1 md:order-2">
+                <div class="relative w-full max-w-md aspect-[3/4] rounded-full overflow-hidden border border-outline-variant p-4">
+                    <img alt="Hainzel Kemal" class="w-full h-full object-cover rounded-full" data-alt="Some guy wearing a hat and smiling. I don't know what he's thinking about" src="D:\portfolio\fototopi.png"/>
+                </div>
+            </div>
+            <div class="md:col-span-3 flex flex-col justify-center space-y-16 order-3">
+                <div class="text-right md:text-left">
+                    <h3 class="text-label-caps font-label-caps text-secondary mb-2 uppercase tracking-widest opacity-60">Years of Experience</h3>
+                    <p class="text-[80px] leading-none font-display-lg text-primary">1</p>
+                </div>
+                <div class="text-right md:text-left">
+                    <h3 class="text-label-caps font-label-caps text-secondary mb-2 uppercase tracking-widest opacity-60">Major Projects Completed</h3>
+                    <p class="text-[80px] leading-none font-display-lg text-primary">6+</p>
+                </div>
+                <!-- <div class="text-right md:text-left">
+                    <h3 class="text-label-caps font-label-caps text-secondary mb-2 uppercase tracking-widest opacity-60">Clients on Worldwide</h3>
+                    <p class="text-[80px] leading-none font-display-lg text-primary">+80</p>
+                </div> -->
+            </div>
+        </div>
+        
+        <div class="w-full h-px bg-outline-variant mb-16"></div>
+
+        <!-- My Advantage -->
+        <div>
+            <h2 class="text-display-lg-mobile md:text-display-lg font-display-lg text-primary text-center mb-16">My Advantage</h2>
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-gutter">
+                <div class="flex flex-col items-center">
+                    <!-- 1. Added overflow-hidden to clip the image to the circle -->
+                    <div class="w-32 h-32 rounded-full border border-outline-variant flex flex-col items-center justify-center mb-6 hover:bg-surface-container transition-all cursor-default overflow-hidden">
+                        
+                        <!-- 2. Added sizing (w-12) and object-contain to the image -->
+                        <img 
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+                            class="w-12 h-12 object-contain grayscale" 
+                            alt="Laravel Logo"
+                        />
+                        
+                        <span class="text-headline-md font-headline-md">92%</span>
+                    </div>
+                    <p class="text-label-caps font-label-caps text-secondary">Laravel</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <!-- 1. Added overflow-hidden to clip the image to the circle -->
+                    <div class="w-32 h-32 rounded-full border border-outline-variant flex flex-col items-center justify-center mb-6 hover:bg-surface-container transition-all cursor-default overflow-hidden">
+                        
+                        <!-- 2. Added sizing (w-12) and object-contain to the image -->
+                        <img 
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
+                            class="w-12 h-12 object-contain grayscale" 
+                            alt="Flutter Logo"
+                        />
+                        
+                        <span class="text-headline-md font-headline-md">72%</span>
+                    </div>
+                    <p class="text-label-caps font-label-caps text-secondary">Flutter</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <!-- 1. Added overflow-hidden to clip the image to the circle -->
+                    <div class="w-32 h-32 rounded-full border border-outline-variant flex flex-col items-center justify-center mb-6 hover:bg-surface-container transition-all cursor-default overflow-hidden">
+                        
+                        <!-- 2. Added sizing (w-12) and object-contain to the image -->
+                        <img 
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                            class="w-12 h-12 object-contain grayscale" 
+                            alt="Python Logo"
+                        />
+                        
+                        <span class="text-headline-md font-headline-md">90%</span>
+                    </div>
+                    <p class="text-label-caps font-label-caps text-secondary">Python</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <!-- 1. Added overflow-hidden to clip the image to the circle -->
+                    <div class="w-32 h-32 rounded-full border border-outline-variant flex flex-col items-center justify-center mb-6 hover:bg-surface-container transition-all cursor-default overflow-hidden">
+                        
+                        <!-- 2. Added sizing (w-12) and object-contain to the image -->
+                        <img 
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" 
+                            class="w-12 h-12 object-contain" 
+                            alt="Unity Logo"
+                        />
+                        
+                        <span class="text-headline-md font-headline-md">83%</span>
+                    </div>
+                    <p class="text-label-caps font-label-caps text-secondary">Unity</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <!-- 1. Added overflow-hidden to clip the image to the circle -->
+                    <div class="w-32 h-32 rounded-full border border-outline-variant flex flex-col items-center justify-center mb-6 hover:bg-surface-container transition-all cursor-default overflow-hidden">
+                        
+                        <!-- 2. Added sizing (w-12) and object-contain to the image -->
+                        <img 
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+                            class="w-12 h-12 object-contain grayscale" 
+                            alt="Flutter Logo"
+                        />
+                        
+                        <span class="text-headline-md font-headline-md">72%</span>
+                    </div>
+                    <p class="text-label-caps font-label-caps text-secondary">Figma</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <!-- 1. Added overflow-hidden to clip the image to the circle -->
+                    <div class="w-32 h-32 rounded-full border border-outline-variant flex flex-col items-center justify-center mb-6 hover:bg-surface-container transition-all cursor-default overflow-hidden">
+                        
+                        <!-- 2. Added sizing (w-12) and object-contain to the image -->
+                        <img 
+                            src="https://cdn.brandfetch.io/idO6_6uqJ9/theme/dark/idzvzR_7rs.svg?c=1bxid64Mup7aczewSAYMX&t=1778572455572"
+                            class="w-12 h-12 object-contain grayscale" 
+                            alt="n8n Logo"
+                        />
+                        
+                        <span class="text-headline-md font-headline-md">60%</span>
+                    </div>
+                    <p class="text-label-caps font-label-caps text-secondary">n8n</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+<!-- PORTFOLIO SECTION -->
+<!-- PORTFOLIO SECTION -->
+<section id="portfolio" class="px-margin-mobile md:px-margin-desktop py-20 border-t border-outline-variant">
+    <div class="mb-16 text-center">
+        <h2 class="text-display-lg-mobile md:text-display-lg font-display-lg text-primary">My Latest Projects</h2>
+    </div>
+
+    <!-- 1. Added 'select-none' and 'cursor-grab' -->
+    <div class="flex flex-nowrap overflow-x-auto no-scrollbar snap-x snap-mandatory gap-gutter pb-8 cursor-grab select-none active:cursor-grabbing" id="project-slider">
+        
+        <!-- Project 1 -->
+        <a href="https://github.com/liwangivone/Angkutmi" class="flex-none w-[85vw] md:w-[500px] snap-start group">
+            <div class="overflow-hidden bg-surface-container mb-4 rounded-lg">
+                <!-- 2. Added 'pointer-events-none' and 'draggable="false"' to prevent image ghosting -->
+                <img src="projects-img/Frame 1.png" draggable="false" class="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105 pointer-events-none" />
+            </div>
+            <div class="flex justify-between items-start">
+                <div>
+                    <h4 class="text-headline-md font-headline-md text-on-surface">Angkutmi</h4>
+                    <p class="text-meta-info font-meta-info text-secondary uppercase tracking-wider">Waste Management App</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="https://github.com/trfyrt/Hidropanik" class="flex-none w-[85vw] md:w-[500px] snap-start group">
+            <div class="overflow-hidden bg-surface-container mb-4 rounded-lg">
+                <img src="projects-img/Edgecomputing Hydroponics logo.png" draggable="false" class="w-full aspect-video object-cover pointer-events-none" />
+            </div>
+            <div class="flex justify-between items-start">
+                <div>
+                    <h4 class="text-headline-md font-headline-md text-on-surface">Edge Hydroponics</h4>
+                    <p class="text-meta-info font-meta-info text-secondary uppercase tracking-wider">Automatic Hydroponics Using CNN for ESP32</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="https://github.com/HainzelK/HantuProject" class="flex-none w-[85vw] md:w-[500px] snap-start group">
+            <div class="overflow-hidden bg-surface-container mb-4 rounded-lg">
+                <img src="projects-img/talle-logo.png" draggable="false" class="w-full aspect-video object-cover pointer-events-none" />
+            </div>
+            <div class="flex justify-between items-start">
+                <div>
+                    <h4 class="text-headline-md font-headline-md text-on-surface">Talle</h4>
+                    <p class="text-meta-info font-meta-info text-secondary uppercase tracking-wider">AR Game Using Aksara Lontara</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Project 4 -->
+        <a href="https://github.com/HainzelK/Siata" class="flex-none w-[85vw] md:w-[500px] snap-start group">
+            <div class="overflow-hidden bg-surface-container mb-4 rounded-lg">
+                <img src="projects-img/Slide 16_9 - 1.png" draggable="false" class="w-full aspect-video object-cover pointer-events-none" />
+            </div>
+            <div class="flex justify-between items-start">
+                <div>
+                    <h4 class="text-headline-md font-headline-md text-on-surface">Siata</h4>
+                    <p class="text-meta-info font-meta-info text-secondary uppercase tracking-wider">Volunteering Website to Clean the Beaches</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="px-margin-mobile md:px-margin-desktop py-20 border-t border-outline-variant">
+        <div class="w-full flex justify-center mb-16">
+            <h2 class="text-headline-xl font-headline-xl text-center text-on-background">Curriculum Vitae</h2>
+        </div>
+        <div class="mb-12">
+            <h3 class="text-label-caps font-label-caps text-center text-secondary uppercase tracking-[0.2em]">Timeline of Excellence</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-16">
+            <!-- Column 1: 2014 -->
+            <div class="space-y-8">
+                <div class="border-b border-outline-variant pb-2 mb-6">
+                    <span class="text-label-caps font-label-caps text-primary">2023</span>
+                </div>
+                <div class="group">
+                    <h3 class="text-headline-md font-headline-md text-on-surface mb-1 leading-tight text-xl md:text-2xl">Graduated High School</h3>
+                    <p class="text-meta-info font-meta-info text-secondary">SMA Zion Makassar</p>
+                </div>
+            </div>
+            <!-- Column 2: 2015 - 2019 -->
+            <div class="space-y-8">
+                <div class="border-b border-outline-variant pb-2 mb-6">
+                    <span class="text-label-caps font-label-caps text-primary">2023-2024</span>
+                </div>
+                <div class="group">
+                    <h3 class="text-headline-md font-headline-md text-on-surface mb-1 leading-tight text-xl md:text-2xl">Started College</h3>
+                    <p class="text-meta-info font-meta-info text-secondary">Universitas Ciputra Makassar</p>
+                </div>
+                <div class="group">
+                    <h3 class="text-headline-md font-headline-md text-on-surface mb-1 leading-tight text-xl md:text-2xl">Worked in Inventory Division</h3>
+                    <p class="text-meta-info font-meta-info text-secondary">11th National Programming Logic Competition</p>
+                </div>
+                <div class="group">
+                    <h3 class="text-headline-md font-headline-md text-on-surface mb-1 leading-tight text-xl md:text-2xl">Siata</h3>
+                    <p class="text-meta-info font-meta-info text-secondary">A Website for Volunteering</p>
+                </div>
+                <div class="group">
+                    <h3 class="text-headline-md font-headline-md text-on-surface mb-1 leading-tight text-xl md:text-2xl">Hydroponics Based on AI Edge Computing</h3>
+                    <p class="text-meta-info font-meta-info text-secondary">Hydroponics System Using AI to Predict Nutrients Needed</p>
+                </div>
+            </div>
+            <!-- Column 3: 2020 - PRESENT -->
+            <div class="space-y-8">
+                <div class="border-b border-outline-variant pb-2 mb-6">
+                    <span class="text-label-caps font-label-caps text-primary">2025 - PRESENT</span>
+                </div>
+                <div class="group">
+                    <h3 class="text-headline-md font-headline-md text-on-surface mb-1 leading-tight text-xl md:text-2xl">Angkutmi</h3>
+                    <p class="text-meta-info font-meta-info text-secondary">App for Calling Trash Collection Services</p>
+                </div>
+                <div class="group">
+                    <h3 class="text-headline-md font-headline-md text-on-surface mb-1 leading-tight text-xl md:text-2xl">Talle</h3>
+                    <p class="text-meta-info font-meta-info text-secondary">AR Game to Teach About Aksara Lontara</p>
+                </div>
+                <div class="group">
+                    <h3 class="text-headline-md font-headline-md text-on-surface mb-1 leading-tight text-xl md:text-2xl">Order Here</h3>
+                    <p class="text-meta-info font-meta-info text-secondary">Kiosk Ordering System for UC Canteen using Emotions for Recommendations</p>
+                </div>
+                <!-- <div class="group">
+                    <h3 class="text-headline-md font-headline-md text-on-surface mb-1 leading-tight text-xl md:text-2xl">Author</h3>
+                    <p class="text-meta-info font-meta-info text-secondary">Work for Money, Design for Love</p>
+                </div> -->
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+<!-- Footer -->
+<footer class="bg-background border-t border-outline-variant mt-8">
+    <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-gutter max-w-[1440px] mx-auto">
+        <div class="text-label-caps font-label-caps font-bold text-primary mb-4 md:mb-0 uppercase">
+            Hainzel Kemal
+        </div>
+        <div class="flex gap-8 mb-4 md:mb-0">
+            <a class="text-meta-info font-meta-info text-secondary hover:text-primary underline underline-offset-4 transition-all ease-in-out duration-200" href="https://github.com/HainzelK">Github</a>
+            <a class="text-meta-info font-meta-info text-secondary hover:text-primary underline underline-offset-4 transition-all ease-in-out duration-200" href="https://www.instagram.com/hainzelk">Instagram</a>
+            <a class="text-meta-info font-meta-info text-secondary hover:text-primary underline underline-offset-4 transition-all ease-in-out duration-200" href="https://www.linkedin.com/in/hainzel-kemal-423599389/">LinkedIn</a>
+        </div>
+        <div class="text-meta-info font-meta-info text-secondary">
+            © 2026 Hainzel Kemal. All rights reserved.
+        </div>
+    </div>
+</footer>
+<script>
+    const slider = document.getElementById('project-slider');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    let isDragging = false;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        isDragging = false;
+        slider.style.cursor = 'grabbing';
+        slider.style.scrollSnapType = 'none'; // Disable snapping during drag
+        slider.style.scrollBehavior = 'auto'; // Disable smooth scroll during drag
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.style.scrollSnapType = 'x mandatory'; // Re-enable snapping
+    });
+
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.style.cursor = 'grab';
+        slider.style.scrollSnapType = 'x mandatory'; // Re-enable snapping
+        
+        // Brief timeout to allow click event to determine if we were dragging
+        setTimeout(() => { isDragging = false; }, 50);
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        isDragging = true;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2; // Scroll speed
+        slider.scrollLeft = scrollLeft - walk;
+    });
+
+    // Prevent links from opening if the user was dragging
+    slider.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            if (isDragging) {
+                e.preventDefault();
+            }
+        });
+    });
+
+        const shareBtn = document.getElementById('share-button');
+
+    shareBtn.addEventListener('click', async () => {
+        const shareData = {
+            title: 'Hainzel Kemal | Portfolio',
+            text: 'Check out this AI and Data Enthusiast portfolio!',
+            url: window.location.href // This gets your current website link
+        };
+
+        try {
+            // 1. Try Native Share (Mobile / Modern Desktop Browsers)
+            if (navigator.share) {
+                await navigator.share(shareData);
+            } 
+            // 2. Fallback: Copy to Clipboard
+            else {
+                await navigator.clipboard.writeText(window.location.href);
+                
+                // Visual feedback that it was copied
+                const originalIcon = shareBtn.textContent;
+                shareBtn.textContent = 'content_copy'; // Change icon to copy icon
+                shareBtn.classList.add('text-error'); // Highlight it
+                
+                alert('Link copied to clipboard!');
+
+                // Reset icon after 2 seconds
+                setTimeout(() => {
+                    shareBtn.textContent = originalIcon;
+                    shareBtn.classList.remove('text-error');
+                }, 2000);
+            }
+        } catch (err) {
+            console.log('Error sharing:', err);
+        }
+    });
+</script>
+</body>
+</html>
