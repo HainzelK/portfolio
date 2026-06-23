@@ -312,21 +312,18 @@
         </div>
     </section>
 
-    <!-- PORTFOLIO SECTION -->
-<!-- PORTFOLIO SECTION -->
 <!-- PORTFOLIO SECTION -->
 <section id="portfolio" class="px-margin-mobile md:px-margin-desktop py-20 border-t border-outline-variant">
     <div class="mb-16 text-center">
         <h2 class="text-display-lg-mobile md:text-display-lg font-display-lg text-primary">My Latest Projects</h2>
     </div>
 
-    <!-- 1. Added 'select-none' and 'cursor-grab' -->
-    <div class="flex flex-nowrap overflow-x-auto no-scrollbar snap-x snap-mandatory gap-gutter pb-8 cursor-grab select-none active:cursor-grabbing" id="project-slider">
+    <!-- Removed 'snap-x snap-mandatory' to allow for fluid, smooth auto-scrolling -->
+    <div class="flex flex-nowrap overflow-x-auto no-scrollbar gap-gutter pb-8 cursor-grab select-none active:cursor-grabbing" id="project-slider">
         
         <!-- Project 1 -->
-        <a href="https://linktr.ee/ucmorderherekiosk" class="flex-none w-[85vw] md:w-[500px] snap-start group">
+        <a href="https://linktr.ee/ucmorderherekiosk" class="flex-none w-[85vw] md:w-[500px] group">
             <div class="overflow-hidden bg-surface-container mb-4 rounded-lg">
-                <!-- 2. Added 'pointer-events-none' and 'draggable="false"' to prevent image ghosting -->
                 <img src="projects-img/banner-order-here.png" draggable="false" class="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105 pointer-events-none" />
             </div>
             <div class="flex justify-between items-start">
@@ -337,9 +334,8 @@
             </div>
         </a>
         <!-- Project 2 -->
-        <a href="https://github.com/liwangivone/Angkutmi" class="flex-none w-[85vw] md:w-[500px] snap-start group">
+        <a href="https://github.com/liwangivone/Angkutmi" class="flex-none w-[85vw] md:w-[500px] group">
             <div class="overflow-hidden bg-surface-container mb-4 rounded-lg">
-                <!-- 2. Added 'pointer-events-none' and 'draggable="false"' to prevent image ghosting -->
                 <img src="projects-img/Frame 1.png" draggable="false" class="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105 pointer-events-none" />
             </div>
             <div class="flex justify-between items-start">
@@ -349,10 +345,9 @@
                 </div>
             </div>
         </a>
-        <!-- Project 2 -->
-        <a href="" class="flex-none w-[85vw] md:w-[500px] snap-start group">
+        <!-- Project 3 -->
+        <a href="" class="flex-none w-[85vw] md:w-[500px] group">
             <div class="overflow-hidden bg-surface-container mb-4 rounded-lg">
-                <!-- 2. Added 'pointer-events-none' and 'draggable="false"' to prevent image ghosting -->
                 <img src="projects-img/poster-biun.png" draggable="false" class="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105 pointer-events-none" />
             </div>
             <div class="flex justify-between items-start">
@@ -363,8 +358,8 @@
             </div>
         </a>
 
-        <!-- Project 2 -->
-        <a href="https://github.com/trfyrt/Hidropanik" class="flex-none w-[85vw] md:w-[500px] snap-start group">
+        <!-- Project 4 -->
+        <a href="https://github.com/trfyrt/Hidropanik" class="flex-none w-[85vw] md:w-[500px] group">
             <div class="overflow-hidden bg-surface-container mb-4 rounded-lg">
                 <img src="projects-img/Edgecomputing Hydroponics logo.png" draggable="false" class="w-full aspect-video object-cover pointer-events-none" />
             </div>
@@ -376,8 +371,8 @@
             </div>
         </a>
 
-        <!-- Project 3 -->
-        <a href="https://github.com/HainzelK/HantuProject" class="flex-none w-[85vw] md:w-[500px] snap-start group">
+        <!-- Project 5 -->
+        <a href="https://github.com/HainzelK/HantuProject" class="flex-none w-[85vw] md:w-[500px] group">
             <div class="overflow-hidden bg-surface-container mb-4 rounded-lg">
                 <img src="projects-img/talle-logo.png" draggable="false" class="w-full aspect-video object-cover pointer-events-none" />
             </div>
@@ -389,8 +384,8 @@
             </div>
         </a>
 
-        <!-- Project 4 -->
-        <a href="https://github.com/HainzelK/Siata" class="flex-none w-[85vw] md:w-[500px] snap-start group">
+        <!-- Project 6 -->
+        <a href="https://github.com/HainzelK/Siata" class="flex-none w-[85vw] md:w-[500px] group">
             <div class="overflow-hidden bg-surface-container mb-4 rounded-lg">
                 <img src="projects-img/Slide 16_9 - 1.png" draggable="false" class="w-full aspect-video object-cover pointer-events-none" />
             </div>
@@ -495,28 +490,51 @@
     let startX;
     let scrollLeft;
     let isDragging = false;
+    
+    // Auto-scroll variables
+    let scrollSpeed = 0.6; // Adjust this for speed
+    let isPaused = false;
+
+    // Auto-scroll function
+    function step() {
+        if (!isPaused && !isDown) {
+            slider.scrollLeft += scrollSpeed;
+            // Reset to start when reaching the end for infinite loop feel
+            if (slider.scrollLeft >= (slider.scrollWidth - slider.clientWidth - 1)) {
+                slider.scrollLeft = 0;
+            }
+        }
+        requestAnimationFrame(step);
+    }
+    
+    // Start auto-scroll
+    requestAnimationFrame(step);
+
+    // Pause on hover
+    slider.addEventListener('mouseenter', () => isPaused = true);
+    slider.addEventListener('mouseleave', () => {
+        if (!isDown) isPaused = false;
+    });
 
     slider.addEventListener('mousedown', (e) => {
         isDown = true;
+        isPaused = true;
         isDragging = false;
         slider.style.cursor = 'grabbing';
-        slider.style.scrollSnapType = 'none'; // Disable snapping during drag
-        slider.style.scrollBehavior = 'auto'; // Disable smooth scroll during drag
+        slider.style.scrollBehavior = 'auto'; 
         startX = e.pageX - slider.offsetLeft;
         scrollLeft = slider.scrollLeft;
     });
 
     slider.addEventListener('mouseleave', () => {
         isDown = false;
-        slider.style.scrollSnapType = 'x mandatory'; // Re-enable snapping
+        isPaused = false;
     });
 
     slider.addEventListener('mouseup', () => {
         isDown = false;
+        isPaused = false;
         slider.style.cursor = 'grab';
-        slider.style.scrollSnapType = 'x mandatory'; // Re-enable snapping
-        
-        // Brief timeout to allow click event to determine if we were dragging
         setTimeout(() => { isDragging = false; }, 50);
     });
 
@@ -525,54 +543,39 @@
         isDragging = true;
         e.preventDefault();
         const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 2; // Scroll speed
+        const walk = (x - startX) * 2; 
         slider.scrollLeft = scrollLeft - walk;
     });
 
-    // Prevent links from opening if the user was dragging
+    // Prevent links from opening if dragging
     slider.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', (e) => {
-            if (isDragging) {
-                e.preventDefault();
-            }
+            if (isDragging) e.preventDefault();
         });
     });
 
-        const shareBtn = document.getElementById('share-button');
-
+    // Share Button Logic
+    const shareBtn = document.querySelector('[data-icon="share"]').parentElement;
     shareBtn.addEventListener('click', async () => {
         const shareData = {
             title: 'Hainzel Kemal | Portfolio',
             text: 'Check out this AI and Data Enthusiast portfolio!',
-            url: window.location.href // This gets your current website link
+            url: window.location.href
         };
-
         try {
-            // 1. Try Native Share (Mobile / Modern Desktop Browsers)
             if (navigator.share) {
                 await navigator.share(shareData);
-            } 
-            // 2. Fallback: Copy to Clipboard
-            else {
+            } else {
                 await navigator.clipboard.writeText(window.location.href);
-                
-                // Visual feedback that it was copied
-                const originalIcon = shareBtn.textContent;
-                shareBtn.textContent = 'content_copy'; // Change icon to copy icon
-                shareBtn.classList.add('text-error'); // Highlight it
-                
                 alert('Link copied to clipboard!');
-
-                // Reset icon after 2 seconds
-                setTimeout(() => {
-                    shareBtn.textContent = originalIcon;
-                    shareBtn.classList.remove('text-error');
-                }, 2000);
             }
         } catch (err) {
             console.log('Error sharing:', err);
         }
     });
+
+
+    
 </script>
 </body>
 </html>
